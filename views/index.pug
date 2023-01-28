@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+  dl
+    each message in messages
+      dt
+        p Message = #{message.text}
+        p User = #{message.user}
+      dd
+        p Time = #{message.added}
+
